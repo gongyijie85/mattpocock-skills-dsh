@@ -1,0 +1,33 @@
+{
+  "name": "mattpocock-skills-dsh",
+  "description": "Matt Pocock's skills for the DeepSeek Harness: grilling, writing-for-agents, wait-what and more — adapted from https://github.com/mattpocock/skills",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "skills",
+    "mattpocock",
+    "aihero"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# mattpocock-skills-dsh bundle patch: mount the matt-pocock skill provider
+# into the host skill registry (its rows are host-plane, so every agent
+# preset's scope chain merges the skills it registers).
+#
+# This patch is applied over the dsh-base layer; later layers (the profile's
+# own cordis.patch.yml and --patch overlays) can still address this row by id.
+- insert:
+    - id: mattpocock-skills-dsh
+      name: 'mattpocock-skills-dsh'
