@@ -17,6 +17,18 @@
     "LICENSE"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gongyijie85/mattpocock-skills-dsh.git"
+  },
+  "homepage": "https://github.com/gongyijie85/mattpocock-skills-dsh",
+  "bugs": {
+    "url": "https://github.com/gongyijie85/mattpocock-skills-dsh/issues"
+  },
+  "scripts": {
+    "verify": "node scripts/verify-provider.mjs",
+    "prepublishOnly": "node scripts/verify-provider.mjs"
+  },
   "keywords": [
     "dsh",
     "deepseek-harness",
