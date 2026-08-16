@@ -40,10 +40,10 @@ agent preset 的作用域链都会合并这些技能。技能正文随包分发
 ### 最简单:一条命令(从 GitHub 安装)
 
 ```sh
-npx @deepseek-ai/dsh plugin --profile web add github:<你的用户名>/mattpocock-skills-dsh
+npx @deepseek-ai/dsh plugin --profile web add github:gongyijie85/mattpocock-skills-dsh
 ```
 
-### 从本地文件夹安装(PoC 阶段推荐)
+### 从本地文件夹安装(开发阶段)
 
 ```sh
 # 任意目录下执行;文件夹安装是链接方式,改完重启 profile 即生效
@@ -55,7 +55,7 @@ dsh plugin --profile web add D:\plugins\mattpocock-skills-dsh
 打开 DeepSeek Harness(Web 界面),新建对话,把下面这句话发给它:
 
 ```
-帮我安装这个链接里边的插件:https://github.com/<你的用户名>/mattpocock-skills-dsh
+帮我安装这个链接里边的插件:https://github.com/gongyijie85/mattpocock-skills-dsh
 ```
 
 Agent 会自动完成安装(`dsh plugin add` → 重启 profile → 验证技能注册)。
