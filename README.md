@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/mattpocock-skills-dsh)](https://www.npmjs.com/package/mattpocock-skills-dsh)
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/mattpocock-skills-dsh)](https://github.com/gongyijie85/mattpocock-skills-dsh/releases)
+[![CI](https://github.com/gongyijie85/mattpocock-skills-dsh/actions/workflows/ci.yml/badge.svg)](https://github.com/gongyijie85/mattpocock-skills-dsh/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 <div align="center">
