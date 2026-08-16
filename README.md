@@ -108,38 +108,38 @@ dsh plugin --profile web remove mattpocock-skills-dsh
 
 ### productivity(7)
 
-| 技能 | 用途 | 调用方式 |
+| 技能 | 用途(官方描述对照翻译,见 [aihero.dev/skills](https://www.aihero.dev/skills)) | 调用方式 |
 | --- | --- | --- |
-| `grill-me` | 入口:无情地拷问一个计划或设计 | 用户调用(指向 grilling) |
-| `grilling` | 把想法压力测试成设计树,逐轮提问直到共识 | 模型/用户调用 |
-| `handoff` | 把当前对话压成交接文档给下一个 agent | 用户调用 |
-| `teach` | 在多个会话里教用户一个概念 | 用户调用 |
-| `to-questionnaire` | 把答不了的决策转成给别人填的问卷 | 用户调用 |
-| `wait-what` | 停下:上一条消息没接住——重新表述 | 用户调用 |
-| `writing-for-agents` | 编写 agent 消费的文档(skill、AGENTS.md 等) | 模型/用户调用 |
+| [grill-me](https://aihero.dev/skills-grill-me) | 把一个**模糊的想法**拷问成你能承诺的东西——以"轮"提问,每轮只问前置条件已定的完整**前沿**(frontier) | 用户调用(指向 grilling) |
+| [grilling](https://aihero.dev/skills-grilling) | 在任何人行动之前压力测试计划/决策/想法的面试循环:把主题映射成**设计树**,逐支问到底,直到没有默认假设残留 | 模型/用户调用 |
+| [handoff](https://aihero.dev/skills-handoff) | 把当前对话压缩成**交接文档**——写到系统临时目录(而非工作区)的单个 Markdown 文件,新 agent 读它即可接手 | 用户调用 |
+| [teach](https://aihero.dev/skills-teach) | 把所在目录变成常驻教学空间,跨多个会话用短小的自包含 HTML 课程教一个主题 | 用户调用 |
+| [to-questionnaire](https://aihero.dev/skills-to-questionnaire) | 把一个人定不了的决策变成**问卷**——交给掌握缺失信息的人异步填,或开会一起过 | 用户调用 |
+| [wait-what](https://aihero.dev/skills-wait-what) | 消息没接住时输入它:agent 重讲一遍刚才的话,补上缺失的上下文、用平实的英语、采用项目 `CONTEXT.md` 的词汇 | 用户调用 |
+| [writing-for-agents](https://aihero.dev/skills-writing-for-agents) | 写 agent 消费文档的参考(skill、`AGENTS.md`/`CLAUDE.md`、spec、运行时提示词、README):包装不同,写法相同 | 模型/用户调用 |
 
 ### engineering(18)
 
-| 技能 | 用途 | 调用方式 |
+| 技能 | 用途(官方描述对照翻译,见 [aihero.dev/skills](https://www.aihero.dev/skills)) | 调用方式 |
 | --- | --- | --- |
-| `ask-matt` | 路由器:问哪个技能/流程适合当前情况 | 用户调用 |
-| `code-review` | 双轴评审(标准 + 规格),并行子代理 | 模型/用户调用 |
-| `codebase-design` | 深模块设计词汇(module/interface/depth/seam...) | 模型/用户调用 |
-| `diagnosing-bugs` | 硬 bug 与性能回归的诊断循环 | 模型/用户调用 |
-| `domain-modeling` | 打磨项目领域语言,记录 ADR | 模型/用户调用 |
-| `grill-with-docs` | 带文档沉淀的拷问(ADR + 词汇表) | 用户调用 |
-| `implement` | 按 spec/票据实现一段工作 | 用户调用 |
-| `improve-codebase-architecture` | 扫描深挖机会,HTML 报告 + 拷问 | 用户调用 |
-| `prototype` | 用一次性原型回答设计问题 | 模型/用户调用 |
-| `research` | 背景代理查一手资料,产出引用 Markdown | 模型/用户调用 |
-| `resolving-merge-conflicts` | 按意图解决 merge/rebase 冲突 | 模型/用户调用 |
-| `setup-matt-pocock-skills` | 一次性配置 issue tracker/标签/文档布局 | 用户调用 |
-| `tdd` | 红-绿-重构实现循环 | 模型/用户调用 |
-| `to-spec` | 把对话合成 spec 发布到 tracker | 用户调用 |
-| `to-tickets` | 把 spec 拆成声明阻塞边的 tracer-bullet 票据 | 用户调用 |
-| `triage` | 把 issue/PR 走完三态机并写 agent 简报 | 用户调用 |
-| `wayfinder` | 超大会话工作:决策票据地图逐条解决 | 用户调用 |
-| `wizard` | 生成交互式 bash 向导,让人走只有人能走的步骤 | 模型/用户调用 |
+| [ask-matt](https://aihero.dev/skills-ask-matt) | 全仓库技能的路由器:描述你的处境,它给出匹配的技能或技能序列,以及其中人类决策的位置 | 用户调用 |
+| [code-review](https://aihero.dev/skills-code-review) | 按两个轴评审 `HEAD` 与指定基点的 diff:**Standards**(是否符合本仓库写法)+ **Spec**(是否实现了源头 issue/spec),两轴各由独立子代理运行 | 模型/用户调用 |
+| [codebase-design](https://aihero.dev/skills-codebase-design) | 固定模块设计词汇:**module、interface、depth、seam、adapter、leverage、locality**,逐一精确定义并禁用松散替身词 | 模型/用户调用 |
+| [diagnosing-bugs](https://aihero.dev/skills-diagnosing-bugs) | 对硬 bug 或性能回归跑六阶段诊断:复现→最小化→假设排序→插桩→带回归测试修复→清理 | 模型/用户调用 |
+| [domain-modeling](https://aihero.dev/skills-domain-modeling) | 设计过程中构建并打磨项目的**通用语言**:挑战与词汇表冲突的术语、逼出精确词、用具体场景压力测试关系 | 模型/用户调用 |
+| [grill-with-docs](https://aihero.dev/skills-grill-with-docs) | 拷问计划/设计直到共享理解,同时把词汇与硬决策写进仓库(ADR + 词汇表);与 grill-me 同款面试,面向代码库 | 用户调用 |
+| [implement](https://aihero.dev/skills-implement) | 构建已决策的工作:指向 ticket/spec/刚谈定的计划,写代码、在接缝处驱动 tdd、边写边类型检查、末尾跑 code-review 并提交 | 用户调用 |
+| [improve-codebase-architecture](https://aihero.dev/skills-improve-codebase-architecture) | 扫描代码库找**加深机会**(浅模块→深模块),写成自包含 HTML 报告,然后拷问你选中的那个 | 用户调用 |
+| [prototype](https://aihero.dev/skills-prototype) | 写**一次性代码回答问题**——状态模型对不对、界面该长什么样;问题先行,答错问题就是纯浪费 | 模型/用户调用 |
+| [research](https://aihero.dev/skills-research) | 只从**一手资料**(官方文档/源码/spec/官方 API)读答案,在仓库留下带引用的 Markdown;每条结论追到拥有它的源头 | 模型/用户调用 |
+| [resolving-merge-conflicts](https://aihero.dev/skills-resolving-merge-conflicts) | 逐块解决进行中的 git merge/rebase 冲突,跑项目自己的检查,提交收尾 | 模型/用户调用 |
+| [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) | 回答一个仓库的三个问题(issue 放哪、triage 标签叫什么、领域文档在哪),以 `docs/agents/` 下的 markdown 记录 | 用户调用 |
+| [tdd](https://aihero.dev/skills-tdd) | 测试先行构建功能/修 bug:一个失败测试→刚好能过的代码→下一个行为;并携带让测试套件值得保留的标准 | 模型/用户调用 |
+| [to-spec](https://aihero.dev/skills-to-spec) | 把刚谈完的对话变成 **spec**,作为单个 issue 发布到 issue tracker | 用户调用 |
+| [to-tickets](https://aihero.dev/skills-to-tickets) | 把计划/spec/对话拆成一组 **ticket**,每个声明**阻塞边**(必须先行完成的其它 ticket) | 用户调用 |
+| [triage](https://aihero.dev/skills-triage) | 把 tracker 上的 issue 逐个走完 triage 角色状态机,留下 agent-ready 简报、给报告人的具体问题、或带原因关闭的 issue | 用户调用 |
+| [wayfinder](https://aihero.dev/skills-wayfinder) | 把超过一个 agent 会话的大工程画成 issue tracker 上的**决策票据地图**,逐条解决直到路清晰 | 用户调用 |
+| [wizard](https://aihero.dev/skills-wizard) | 生成交互式 bash 脚本,一步步带人走手动流程(接三方服务/一次性迁移):打开 URL、说清点哪复制什么、捕获结果写入 `.env` 与 GitHub secrets | 模型/用户调用 |
 
 > 说明:`/clear`、`/compact` 是上游引用的 Claude Code 原生命令,非本包技能;
 > DSH 中对应"开新会话"与"手动摘要续接",详见
