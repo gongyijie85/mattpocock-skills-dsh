@@ -1,5 +1,9 @@
 # mattpocock-skills-dsh
 
+[![npm version](https://img.shields.io/npm/v/mattpocock-skills-dsh)](https://www.npmjs.com/package/mattpocock-skills-dsh)
+[![GitHub release](https://img.shields.io/github/v/release/gongyijie85/mattpocock-skills-dsh)](https://github.com/gongyijie85/mattpocock-skills-dsh/releases)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 为 **DeepSeek Harness (DSH)** 打造的 Matt Pocock 技能插件包:把
 [mattpocock/skills](https://github.com/mattpocock/skills)(来自
 [aihero.dev/skills](https://www.aihero.dev/skills) 的"真实工程师"技能集)
@@ -12,6 +16,28 @@ agent preset 的作用域链都会合并这些技能。技能正文随包分发
 
 > **非官方移植**:技能内容改编自 [mattpocock/skills](https://github.com/mattpocock/skills)(MIT,
 > © Matt Pocock)。上游以 Claude Code 插件格式发布;本包做的是 DSH 适配。
+
+## 快速上手:七课工作流(中英对照)
+
+> 出自 Matt Pocock 的 skills 邮件——整包技能的正确打开方式,就是按下面
+> 这条工作流从头跑到尾。`Sandcastle` 为外部工具,不在本包内。
+
+> Prompts are disposable. Workflows are reusable. That is the whole
+> difference, and these seven lessons are one workflow in the order you
+> would actually run it:
+>
+> 提示词用过即弃,工作流可以复用——全部区别就在于此。而这七课,合起来
+> 就是一条按真实执行顺序运行的工作流:
+
+| Step | 原文 | 对照中文 |
+| --- | --- | --- |
+| 0 | This email. Pick your path. | 这封邮件就是起点:选一条路。 |
+| 1 | `/grill-with-docs` , so the agent is not building from fog | 先把想法拷问清楚,agent 才不会在迷雾中开工 |
+| 2 | `/prototype` and `/handoff` , to test the uncertain part in a toy version | 用玩具原型验证不确定的部分,并留好交接 |
+| 3 | `/to-spec` and `/to-tickets` , to break big work into reviewable slices | 把大工作拆成可评审的切片 |
+| 4 | `Sandcastle` , to run AFK agents somewhere safe | 在安全的地方跑挂机(AFK)agent(外部工具,不在本包) |
+| 5 | `/code-review` , so each run teaches the next one | 每一次评审,都让下一次运行变得更好 |
+| 6 | The full loop, start to finish | 从起点到终点,跑完整条循环 |
 
 ## 在 DeepSeek Harness 中安装与使用
 
