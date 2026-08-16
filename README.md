@@ -4,11 +4,11 @@
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/mattpocock-skills-dsh)](https://github.com/gongyijie85/mattpocock-skills-dsh/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-> **English:** Matt Pocock's skills for the DeepSeek Harness — the full promoted
-> set of [mattpocock/skills](https://github.com/mattpocock/skills) (25 SKILL.md:
-> grilling, writing-for-agents, wait-what, TDD, code review, wayfinder, ask-matt
-> router and more), adapted to DSH's Cordis plugin architecture (MIT, © Matt
-> Pocock). Install: `dsh plugin --profile web add mattpocock-skills-dsh`.
+<div align="center">
+
+[English](README.en.md) | **简体中文**
+
+</div>
 
 为 **DeepSeek Harness (DSH)** 打造的 Matt Pocock 技能插件包:把
 [mattpocock/skills](https://github.com/mattpocock/skills)(来自
