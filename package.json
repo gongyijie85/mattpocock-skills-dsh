@@ -1,7 +1,7 @@
 {
   "name": "mattpocock-skills-dsh",
   "description": "Matt Pocock's skills for the DeepSeek Harness: grilling, writing-for-agents, wait-what and more — adapted from https://github.com/mattpocock/skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "main": "lib/index.js",
