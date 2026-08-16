@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.1] - 2026-08-16
+
+### Changed
+
+- 新增完整英文 README(`README.en.md`),随 npm 包分发;中文 README 顶部加语言切换链接。
+- 技能表对齐 [aihero.dev/skills](https://www.aihero.dev/skills) 官方描述(中文对照翻译),
+  每个技能名挂官方文档链接。
+- README 增加安装徽章、七课工作流(中英对照)与 CHANGELOG。
+
 ## [0.1.0] - 2026-08-16
 
 首个发布版:把 Matt Pocock 的完整发布技能集移植到 DeepSeek Harness。
