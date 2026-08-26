@@ -1,5 +1,24 @@
 # Changelog
 
+## [0.1.3] - 2026-08-26
+
+### Changed
+
+- 全量再同步上游 [mattpocock/skills](https://github.com/mattpocock/skills)
+  (068b6e0 → 6654f6b):25 个正式技能内容全部刷新。
+- 实质性改动:grilling 轮次模板加水平分隔线(HR);wait-what 补充
+  `CONTEXT-MAP.md` 指引;to-tickets 新增 wide-refactor expand–contract 段落、
+  blocking-edge 校验问题与按 ticket 模板字段。
+- 全仓去除 em-dash、SKILL.md description 加引号(YAML 安全);继续保留去技能
+  斜杠前缀的 DSH 适配(`/clear`、`/compact` 不动)。
+- 上游新增 in-progress `retro` 技能尚未转正,本次不引入。
+
+## [0.1.2] - 2026-08-16
+
+### Added
+
+- provider 原生解析折叠 YAML frontmatter(有未加引号冒号的 description)。
+
 ## [0.1.1] - 2026-08-16
 
 ### Changed
