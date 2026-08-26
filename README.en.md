@@ -157,6 +157,10 @@ dsh plugin --profile web remove mattpocock-skills-dsh
 
 ## Adaptation notes (vs upstream mattpocock/skills)
 
+- **Sync status**: the 25 skill bodies track upstream — last full re-sync
+  **2026-08-26** to [mattpocock/skills](https://github.com/mattpocock/skills)
+  `6654f6b` (grilling round HR separator, wait-what `CONTEXT-MAP.md` guidance,
+  to-tickets wide-refactor section). See [CHANGELOG.md](CHANGELOG.md).
 - **Format**: upstream already uses standard `SKILL.md` (YAML frontmatter:
   `name` + `description`, optional `whenToUse`), so DSH consumes it directly;
   bodies are essentially unchanged.

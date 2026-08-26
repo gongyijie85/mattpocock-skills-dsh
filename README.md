@@ -154,6 +154,10 @@ dsh plugin --profile web remove mattpocock-skills-dsh
 
 ## 移植说明(对比上游 mattpocock/skills)
 
+- **同步状态**:25 个技能正文持续跟进上游——最近一次 **2026-08-26** 全量同步至
+  [mattpocock/skills](https://github.com/mattpocock/skills) `6654f6b`(含 grilling
+  轮次 HR 分隔、wait-what `CONTEXT-MAP.md` 指引、to-tickets wide-refactor 段落)。
+  更新历史见 [CHANGELOG.md](CHANGELOG.md)。
 - **格式**:上游即标准 `SKILL.md`(YAML frontmatter:`name` +
   `description`,可选 `whenToUse`),DSH 可直接消费,正文基本零改动。
 - **调用语义**:上游 `disable-model-invocation: true`(仅用户可调,如
