@@ -3,6 +3,8 @@
 [![npm version](https://img.shields.io/npm/v/mattpocock-skills-dsh)](https://www.npmjs.com/package/mattpocock-skills-dsh)
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/mattpocock-skills-dsh)](https://github.com/gongyijie85/mattpocock-skills-dsh/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2%2B-4d6bfe)](https://github.com/gongyijie85/mattpocock-skills-dsh)
+[![-skills](https://img.shields.io/badge/-skills-4d6bfe)]() [![-seven-lessons](https://img.shields.io/badge/-seven--lessons-4d6bfe)]() [![-grilling](https://img.shields.io/badge/-grilling-4d6bfe)]() [![-to-spec](https://img.shields.io/badge/-to--spec-4d6bfe)]() [![-to-tickets](https://img.shields.io/badge/-to--tickets-4d6bfe)]()
 
 Matt Pocock's skills for the **DeepSeek Harness (DSH)** — the full promoted set
 of [mattpocock/skills](https://github.com/mattpocock/skills) (the "real

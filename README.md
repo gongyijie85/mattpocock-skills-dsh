@@ -4,6 +4,8 @@
 [![GitHub release](https://img.shields.io/github/v/release/gongyijie85/mattpocock-skills-dsh)](https://github.com/gongyijie85/mattpocock-skills-dsh/releases)
 [![CI](https://github.com/gongyijie85/mattpocock-skills-dsh/actions/workflows/ci.yml/badge.svg)](https://github.com/gongyijie85/mattpocock-skills-dsh/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DSH](https://img.shields.io/badge/DSH-0.1.1--rc.2%2B-4d6bfe)](https://github.com/gongyijie85/mattpocock-skills-dsh)
+[![-技能](https://img.shields.io/badge/-技能-4d6bfe)]() [![-七课工作流](https://img.shields.io/badge/-七课工作流-4d6bfe)]() [![-grilling](https://img.shields.io/badge/-grilling-4d6bfe)]() [![-to-spec](https://img.shields.io/badge/-to--spec-4d6bfe)]() [![-to-tickets](https://img.shields.io/badge/-to--tickets-4d6bfe)]()
 
 <div align="center">
 
