@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.6] - 2026-09-10
+
+### Changed
+
+- 新增 `peerDependencies.@deepseek-ai/cordis "^4.0.1"`：显式声明宿主 cordis 契约。
+- `dsh.compatibility.dshReleases` 由 17 键补至 20 键：新增 `0.1.5-alpha.2` / `0.1.5-rc.1` / `0.1.5-rc.2`（均 `compatible`），适配 0.1.5 线宿主；`engines.dsh` 维持 `>=0.1.0-rc.6`。
+
+> 0.1.4 / 0.1.5 未在本文件留条目，本次一并记录当前状态。
+
 ## [0.1.3] - 2026-08-26
 
 ### Changed
