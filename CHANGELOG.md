@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.7] - 2026-09-11
+
+### Fixed
+
+- **`skills/diagnosing-bugs/scripts/hitl-loop.template.sh` 是残渣文件（82 B）**：内容为一段 `git ls-tree` 输出（`tree origin/HEAD:skills/engineeringdiagnosing-bugs/scripts` + 文件名），真实模板应有 1363 B（`#!/usr/bin/env bash` 开头的 HITL 复现回路模板）。该残渣自初版 `cb7aefd` / 同步 `d4699c0` 起就在仓库里，并随 **0.1.5 / 0.1.6 一起发布到了 npm**（安装体实测同为 82 B）。本次从上游 `mattpocock/skills` 逐字节还原（SHA256 与上游相同）。
+  影响面：本机该技能被 `~/.agents/skills` 的同名技能跨层覆盖，残渣此前不会被读取；但对未安装该技能副本的宿主与本包的其它消费者，`diagnosing-bugs` 的 HITL 回路会指向一个空壳脚本。
+
 ## [0.1.6] - 2026-09-10
 
 ### Changed
