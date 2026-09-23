@@ -6,6 +6,7 @@
 // It fakes the `ctx.skills.registerProvider` surface, captures the registered
 // provider, then exercises list() and get() exactly like the host registry
 // would.
+import { readFileSync } from 'node:fs'
 import { apply } from '../lib/index.js'
 
 let captured
@@ -57,6 +58,29 @@ for (const name of found) {
     failures++
   }
 }
+
+// --- manifest version gate (MF-08 / MF-09) --------------------------------
+// dsh.plugin.json is not an official DSH contract field, but when `files`
+// includes it, it ships inside the npm tarball — so a stale version there is
+// user-visible on the registry. Lock it to package.json before publishing.
+try {
+  const pkg = JSON.parse(readFileSync(new URL('../package.json', import.meta.url), 'utf8'))
+  const manifest = JSON.parse(readFileSync(new URL('../dsh.plugin.json', import.meta.url), 'utf8'))
+  const shipped = Array.isArray(pkg.files) && pkg.files.includes('dsh.plugin.json')
+  if (manifest.version !== pkg.version) {
+    console.error(
+      `FAIL: dsh.plugin.json version "${manifest.version}" != package.json version "${pkg.version}"` +
+        (shipped ? ' (and it ships in the tarball via files[])' : '')
+    )
+    failures++
+  } else {
+    console.log(`OK: dsh.plugin.json version matches package.json (${pkg.version})${shipped ? ' [shipped]' : ''}`)
+  }
+} catch (error) {
+  console.error(`FAIL: manifest version gate could not run: ${String(error)}`)
+  failures++
+}
+// --------------------------------------------------------------------------
 
 if (failures) {
   console.error(`FAIL: ${failures} problem(s)`)
