@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.9] - 2026-11-05
+
+### Changed
+
+- 声明对齐 DSH 0.2.1 线：`engines.dsh` 由 `>=0.1.0-rc.6` 收紧为 `>=0.1.0-rc.6 <0.3.0`。
+- `dshReleases` 补 `0.2.0-rc.1` / `0.2.1-rc.2` / `0.2.1-rc.3` / `0.2.1-rc.4` / `0.2.1-rc.5`（均 `compatible`）；此前未发布的同批声明改动一并在本版纳入。
+- `dsh.plugin.json` 的 `engines.dsh` 同步补上限，版本号与 `package.json` 对齐。
+- 0.2.2-rc.1 暂不声明：该线 cordis 4.0 → 4.1、schemastery 3.18 → 3.19，待桌面升级后冒烟再补。
+
 ## [0.1.7] - 2026-09-11
 
 ### Fixed
